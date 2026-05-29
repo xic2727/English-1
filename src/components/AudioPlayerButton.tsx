@@ -54,7 +54,7 @@ export default function AudioPlayerButton({
       const cleanText = text.replace(/[\/\(\)\-\[\]]/g, ' '); // Clean phonetics symbols
       const utterance = new SpeechSynthesisUtterance(cleanText);
       utterance.lang = 'en-US';
-      utterance.rate = 0.82; // Friendly, slower speed for kids
+      utterance.rate = 0.80; // Friendly, slower speed for kids
       utterance.pitch = 1.15; // Slightly cute, higher childish pitch
 
       // Try selecting a sweet female/Google voice
